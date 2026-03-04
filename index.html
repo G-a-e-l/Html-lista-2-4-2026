@@ -7,6 +7,7 @@
     
 <script>
 var quant=prompt("Escolha a quantidade de números que serão mostrados da sequência");
+var string="";
 var x=1;
 var result;
 var y=1;
@@ -16,14 +17,14 @@ document.write(1);
 document.write(" ");
 for (var i = 0; i < quant;i++) {
 result=x+y
-document.write(result);
-document.write(" ");
+string+=result
+string+=" "
 x=y
 y=result
 
 }
 
-
+document.write(string);
 
 </script>  
     
